@@ -186,4 +186,3 @@ This project demonstrates:
 
 **Built with ❤️ for learning enterprise-grade banking system architecture**
 
-*Perfect for portfolios, interviews, and demonstrating modern software engineering practices*
