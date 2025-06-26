@@ -1,0 +1,17 @@
+spring:
+  application:
+    name: auth-service
+
+  datasource:
+    url: jdbc:postgresql://localhost:5432/banking
+    username: bank
+    password: bankpw
+
+  jpa:
+    hibernate:
+      ddl-auto: update
+
+jwt:
+  secret: DEV_SECRET_123
+server:
+  port: 8081
