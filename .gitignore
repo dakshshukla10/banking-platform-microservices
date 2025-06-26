@@ -1,3 +1,6 @@
+# AI Planning (sensitive strategy information)
+Project-Details/AI_PLAN/
+
 # OS generated files
 .DS_Store
 .DS_Store?
@@ -14,9 +17,8 @@ Thumbs.db
 *.swo
 *~
 
-# Java
+# Java compiled files
 *.class
-*.log
 *.jar
 *.war
 *.nar
@@ -35,18 +37,21 @@ release.properties
 dependency-reduced-pom.xml
 buildNumber.properties
 .mvn/timing.properties
-.mvn/wrapper/maven-wrapper.jar
+# Keep maven wrapper jar - it's needed for builds
+# .mvn/wrapper/maven-wrapper.jar
 
 # Spring Boot
 *.original
 
-# Database
+# Application logs
+*.log
+logs/
+spring.log
+
+# Database files (local development)
 *.db
 *.sqlite
-
-# Logs
-logs/
-*.log
+*.h2.db
 
 # Runtime data
 pids
@@ -54,12 +59,15 @@ pids
 *.seed
 *.pid.lock
 
-# Environment variables
+# Environment variables and secrets
 .env
 .env.local
 .env.development.local
 .env.test.local
 .env.production.local
+application-local.yml
+application-dev.yml
+application-secrets.yml
 
 # Node.js (for future React frontend)
 node_modules/
@@ -67,17 +75,33 @@ npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 .pnpm-debug.log*
+package-lock.json
+yarn.lock
 
-# React build
+# React build outputs
 build/
 dist/
 
 # Docker
 .dockerignore
 
-# Kubernetes
+# Kubernetes secrets
 *.kubeconfig
+*-secret.yaml
+*-secrets.yaml
 
 # Temporary files
 tmp/
 temp/
+*.tmp
+*.temp
+*tmp_code_*.bash
+
+# Test coverage reports
+coverage/
+.nyc_output/
+
+# Backup files
+*.bak
+*.backup
+*~
