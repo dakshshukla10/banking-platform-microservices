@@ -20,7 +20,7 @@ This platform showcases a complete banking ecosystem with distributed services, 
 
 | Service | Technology | Purpose | Status |
 |---------|------------|---------|--------|
-| **Auth Service** | Spring Boot 3, JWT, PostgreSQL | User authentication & authorization | 🟡 In Progress |
+| **Auth Service** | Spring Boot 3, JWT, PostgreSQL | User authentication & authorization | 🟢 Core Complete |
 | **Transaction Producer** | Spring Boot 3, Kafka | REST API for transaction ingestion | 🔄 Planned |
 | **Transaction Consumer** | Spring Boot 3, JPA | Event processing & data persistence | 🔄 Planned |
 | **UI Dashboard** | React, TypeScript | Real-time transaction monitoring | 🔄 Planned |
