@@ -105,3 +105,6 @@ coverage/
 *.bak
 *.backup
 *~
+
+# Serena AI assistant files
+.serena/

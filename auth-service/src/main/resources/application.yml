@@ -8,10 +8,12 @@ spring:
     password: bankpw
 
   jpa:
+    show-sql: true
     hibernate:
       ddl-auto: update
 
 jwt:
-  secret: DEV_SECRET_123
+  secret: ${JWT_SECRET}
+
 server:
   port: 8081
